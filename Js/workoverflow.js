@@ -9,7 +9,7 @@ const todoList = document.querySelector(".todoList");
 const deleteAllBtn = document.querySelector(".footer button");
 let dark_mode_btn = document.querySelector('.dark_mode_btn');
 let music_mode_btn = document.querySelector('.music_mode_btn');
-let audio = new Audio('../Music/music.mp3');
+let audio = new Audio('music.mp3');
 let User = localStorage.getItem("User Name");
 let Todo = localStorage.getItem("Todo Name");
 
