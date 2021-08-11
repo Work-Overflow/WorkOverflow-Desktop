@@ -1,5 +1,4 @@
 // getting all required elements
-//started
 let body = document.querySelector('body');
 let todoname = document.getElementById('todovalid');
 const todonameselect = document.querySelector(".todoname");
