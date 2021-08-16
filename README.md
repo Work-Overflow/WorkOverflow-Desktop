@@ -1,9 +1,9 @@
 
 # Work Overflow  
-#### Version.1.4
 
 An online Todo-List App for keeping nice productivity
 
+#### Version 1.4
 
 ## Top Features
 
