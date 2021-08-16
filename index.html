@@ -32,17 +32,39 @@
         <!-- data coming from local storage -->
       </ul>
       <div class="footer">
-          <div class="time" onload="showTime()" id="MyClockDisplay"></div>
-          <button>CLEAR</button>
+        <div class="time" onload="showTime()" id="MyClockDisplay"></div>
+        <button>CLEAR</button>
       </div>
     </div>
 
     <script src="Js/confetti_black.js"></script>
     <script src="Js/workoverflow.js"></script>
     <script>
+      document.addEventListener('contextmenu', event => event.preventDefault());
+      document.onkeydown = function (e) {
+        // Hacking Protection                    LOL
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+          return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+          return false;
+        }
+        else if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+          return false;
+        }
+        else if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+          return false;
+        }
+        else if (e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) {
+          e.preventDefault();
+          saveText();
+        }
+
+      }
       function myFunction() {
         alert("We respect your Important Data \r\nThat is why in this huge update, all the data of your todo list will be stored in your Browser's Local Storage, which will be more comfortable and convenient to use \r\nFACILITY: \r\n✿ No worry of continuously losing todo data of your todo-list while refreshing or re-opening the website, all your todo will be autosaved, and will again update when you open the website again");
       }
+
     </script>
 
 </body>
