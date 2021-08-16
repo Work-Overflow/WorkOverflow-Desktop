@@ -20,7 +20,7 @@
     <header>Work Overflow &nbsp; <img src="Icon/workoverflow.svg" id="coffee"> &nbsp;&nbsp;&nbsp; </header>
     <!-- <span onclick="myFunction()"><i class="fas fa-info-circle"></i> Info</span> -->
     <div class="dropdown-content">
-      <p>An online Todo-List developed by Dwijottam Dutta</p>
+      <p>An online Todo-List developed by <a id="dev_link" href="https://dwijottam-dutta.github.io/portfolio/about.html">Dwijottam Dutta</a></p>
       <div class="todo_user">
         <div class="todoname" id="todovalid"> Untitled Todo</div>
       </div>
@@ -43,9 +43,9 @@
       document.addEventListener('contextmenu', event => event.preventDefault());
       document.onkeydown = function (e) {
         // Hacking Protection                    LOL
-        if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-          return false;
-        }
+        // if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+        //   return false;
+        // }
         if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
           return false;
         }
