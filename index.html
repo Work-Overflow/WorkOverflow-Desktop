@@ -56,8 +56,7 @@
           return false;
         }
         else if (e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) {
-          e.preventDefault();
-          saveText();
+          return false;
         }
 
       }
