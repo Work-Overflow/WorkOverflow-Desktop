@@ -9,7 +9,6 @@ const deleteAllBtn = document.querySelector(".footer button");
 let dark_mode_btn = document.querySelector('.dark_mode_btn');
 let music_mode_btn = document.querySelector('.music_mode_btn');
 let audio = new Audio('music.mp3');
-let UserVer = localStorage.getItem("User Name");
 let Todo = localStorage.getItem("Todo Name");
 
 if (Todo == null || Todo == ""){
@@ -18,18 +17,6 @@ if (Todo == null || Todo == ""){
 else{
   todoname.innerHTML = Todo;
   document.title = "Work Overflow | "+Todo;
-}
-
-if (UserVer == null || UserVer == ""){
-  userproduct = prompt("Enter your name:");
-  localStorage.setItem("User Name", userproduct);
-  // firebase.initializeApp(firebaseConfig);
-  const database = firebase.database();
-  let data={
-    User: userproduct
-  }
-  let ref = database.ref("Users_Data/" + userproduct);
-	ref.set(data);
 }
 
 

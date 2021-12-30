@@ -8,11 +8,6 @@
   <link rel="stylesheet" href="Style/workoverflow.css">
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-  <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
   <link rel="shortcut icon" href="Icon/workoverflow.svg" type="image/x-icon" />
 </head>
 
@@ -24,13 +19,15 @@
     <p id="sub_sub_text">Because of your device width, but shortly we will be making our web application <i>stable for
         smaller</i> width</p>
   </div>
+  <div class="taskbar">
+    <p id="sub_sub_title">Version 2.1</p>
+  </div>
   <div class="wrapper">
     <div class="features">
       <button class="dark_mode_btn"><i class="fa fa-moon-o" aria-hidden="true"></i></button>
       <button class="music_mode_btn"><i class="fas fa-headphones-alt"></i></button>
     </div>
     <header>Work Overflow &nbsp; <img src="Icon/workoverflow.svg" id="coffee"> &nbsp;&nbsp;&nbsp; </header>
-    <!-- <span onclick="myFunction()"><i class="fas fa-info-circle"></i> Info</span> -->
     <div class="dropdown-content">
       <p>An online Todo-List developed by <a id="dev_link"
           href="https://dwijottam-dutta.github.io/portfolio/about.html">Dwijottam Dutta</a></p>
@@ -49,20 +46,6 @@
         <button>CLEAR</button>
       </div>
     </div>
-    <script id="MainScript">
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      const firebaseConfig = {
-        apiKey: "AIzaSyCXHTPsr6RIe6JerBWhKvoe8P9kb-8WIS0",
-        authDomain: "workoverflow-c62a4.firebaseapp.com",
-        projectId: "workoverflow-c62a4",
-        storageBucket: "workoverflow-c62a4.appspot.com",
-        messagingSenderId: "766802212438",
-        appId: "1:766802212438:web:9ccd2136e451b27dc62df7",
-        measurementId: "G-80ELHYJJW3"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
     </script>
     <script src="Js/confetti_black.js"></script>
     <script src="Js/workoverflow.js"></script>
@@ -86,9 +69,6 @@
           return false;
         }
 
-      }
-      function myFunction() {
-        alert("We respect your Important Data \r\nThat is why in this huge update, all the data of your todo list will be stored in your Browser's Local Storage, which will be more comfortable and convenient to use \r\nFACILITY: \r\n✿ No worry of continuously losing todo data of your todo-list while refreshing or re-opening the website, all your todo will be autosaved, and will again update when you open the website again");
       }
 
     </script>

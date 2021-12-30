@@ -61,6 +61,37 @@ body{
   background: transparent;
 }
 
+.taskbar{
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 10px;
+  width: 15%;
+  background: rgba(255, 255, 255, 0.281);
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3.0px );
+  -webkit-backdrop-filter: blur( 3.0px );
+  border-radius: 10px 10px 0px 0px;
+  height: 40px;
+}
+
+#sub_sub_title {
+  position: fixed;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-weight: 400;
+  text-shadow: 0 1px 0 rgba(167, 109, 109, 0.2);
+  font-size: 2.8em;
+  margin-top: 0em;
+  margin-right:5%;
+  margin-bottom: 2%;
+  font-size: 1.1em;
+  width: 100%;
+  font-family: 'Comfortaa', cursive;
+}
+
 .wrapper{
   display: flex;
   flex-direction: column;

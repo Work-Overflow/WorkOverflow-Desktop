@@ -3,7 +3,7 @@
 
 An online Todo-List App for keeping nice productivity
 
-#### Version 1.4
+#### Version 2.1
 
 ## Top Features
 
