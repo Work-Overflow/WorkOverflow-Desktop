@@ -1,17 +1,16 @@
 
 # Work Overflow  
 
-An online Todo-List App for keeping nice productivity
+A simple task/notes editor for productivity
 
-#### Version 2.1
+#### Version 2.3
 
 ## Top Features
 
-- Light/dark mode toggle
-- Chill Music playing button while making todo
-- Easy to use and quiet fast
-- Todo Name Features
-- Todo securely saved
+- Fresh Looking UI/UX
+- Fully Customized
+- Settings {Theme, Color, Storage Check}
+- Notes Added, with Todo-List
 
   
 ## Developer

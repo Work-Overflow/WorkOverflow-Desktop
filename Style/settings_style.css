@@ -1,5 +1,5 @@
 .settings-content{
-    display: flex;
+    display: none;
     flex-direction: column;
     padding: 20px;
     position: absolute;
