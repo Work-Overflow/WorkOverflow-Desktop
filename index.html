@@ -1,78 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Work Overflow | Dwijottam Dutta</title>
-  <link rel="stylesheet" href="Style/workoverflow.css">
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="shortcut icon" href="Icon/workoverflow.svg" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <title>WorkOverflow</title>
+    <link rel="stylesheet" href="Style/style-two.css" />
+    <link rel="stylesheet" href="Style/notes_style.css" />
+    <link rel="stylesheet" href="Style/task_style.css" />
+    <link rel="stylesheet" href="Style/settings_style.css" />
+    <!-- Boxiocns CDN Link -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
-  <div class="phone_wrapper">
-    <header>Work Overflow</header>
-    <img src="Icon/workoverflow.svg" id="coffee_phone">
-    <p id="sub_text">Sorry, Work Overflow is <i>unstable</i> for your device</p>
-    <p id="sub_sub_text">Because of your device width, but shortly we will be making our web application <i>stable for
-        smaller</i> width</p>
-  </div>
-  <div class="taskbar">
-    <p id="sub_sub_title">Version 2.1</p>
-  </div>
-  <div class="wrapper">
-    <div class="features">
-      <button class="dark_mode_btn"><i class="fa fa-moon-o" aria-hidden="true"></i></button>
-      <button class="music_mode_btn"><i class="fas fa-headphones-alt"></i></button>
-    </div>
-    <header>Work Overflow &nbsp; <img src="Icon/workoverflow.svg" id="coffee"> &nbsp;&nbsp;&nbsp; </header>
-    <div class="dropdown-content">
-      <p>An online Todo-List developed by <a id="dev_link"
-          href="https://dwijottam-dutta.github.io/portfolio/about.html">Dwijottam Dutta</a></p>
-      <div class="todo_user">
-        <div class="todoname" id="todovalid"> Untitled Todo</div>
-      </div>
-      <div class="inputField">
-        <input type="text" placeholder="Add your Daily Task">
-        <button><i class="fas fa-plus"></i></button>
-      </div>
-      <ul class="todoList">
-        <!-- data coming from local storage -->
-      </ul>
-      <div class="footer">
-        <div class="time" onload="showTime()" id="MyClockDisplay"></div>
-        <button>CLEAR</button>
-      </div>
-    </div>
-    </script>
-    <script src="Js/confetti_black.js"></script>
-    <script src="Js/workoverflow.js"></script>
-    <script>
-      document.addEventListener('contextmenu', event => event.preventDefault());
-      document.onkeydown = function (e) {
-        // Hacking Protection                    LOL
-        // if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-        //   return false;
-        // }
-        if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-          return false;
-        }
-        else if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-          return false;
-        }
-        else if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-          return false;
-        }
-        else if (e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) {
-          return false;
-        }
+    <section class="body-section">
+        <div class="main-content">
+            <div class="task-content content">
+                <div class="task-wrapper">
+                    <div class="task-input">
+                        <input type="text" placeholder="Enter a new task" />
+                        <i class="uil uil-plus" id="task_add_icon"></i>
+                    </div>
+                    <div class="controls">
+                        <div class="filters">
+                            <span class="active" id="all">All</span>
+                            <span id="pending">Pending</span>
+                            <span id="completed">Completed</span>
+                        </div>
+                        <button class="clear-btn">Clear All</button>
+                    </div>
+                    <ul class="task-box"></ul>
+                </div>
+            </div>
 
-      }
+            <div class="notes-content content">
+                <div class="popup-box">
+                    <div class="popup">
+                        <div class="content">
+                            <header>
+                                <p></p>
+                                <i class="uil uil-times"></i>
+                            </header>
+                            <form action="#">
+                                <div class="row title">
+                                    <label>Title</label>
+                                    <input type="text" spellcheck="false" />
+                                </div>
+                                <div class="row description">
+                                    <label>Description</label>
+                                    <textarea spellcheck="false"></textarea>
+                                </div>
+                                <button></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="notes-wrapper">
+                    <li class="add-box">
+                        <div class="icon"><i class="uil uil-plus"></i></div>
+                        <p>Add new note</p>
+                    </li>
+                </div>
+            </div>
 
-    </script>
+            <div class="settings-content">
+                <i class="uil uil-times" id="close-settings-imp"></i>
+                <div id="setting-header">
+                    <p id="trademark">WorkOverflow 2.3</p>
+                    <p id="trademark_desc">
+                        A simple task/notes editor for productivity
+                    </p>
+                </div>
+                <div id="setting-maal-masala">
+                    <div class="settings-alive">
+                        <p class="settings-alive-header">Theme</p>
+                        <div class="settings-alive-mode">
+                            <i class="uil uil-sun" id="sun"></i>
+                            <i class="uil uil-moon" id="moon"></i>
+                        </div>
+                    </div>
+                    <div class="settings-alive">
+                        <p class="settings-alive-header">Color</p>
+                        <div class="settings-alive-mode">
+                            <div class="color" id="black"></div>
+                            <div class="color" id="peach"></div>
+                            <div class="color" id="yellow"></div>
+                            <div class="color" id="blue"></div>
+                        </div>
 
+                    </div>
+                    <div class="settings-alive">
+                        <p class="settings-alive-header">Storage</p>
+                        <div class="settings-alive-mode" id="storage-capacity">0 KB</div>
+                    </div>
+                    <button id="clear-data-local-storage">Clear Data</button>
+                    <p style="text-align: center; padding-top: 10px;">Some settings may not work, <br>because the settings, are still under development</p>
+                    <p id="dev">Developed by <a id="dev-about" href="https://github.com/dwijottam-dutta">Dwijottam Dutta</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="title-bar">
+            <div class="taskbar">
+                <div id="good-greet">
+                    <div id="good-notes" class="itemz">
+                        <i class="uil uil-notes"></i>
+                        Notes
+                    </div>
+                    <div id="workoverflow-icon" class="itemzz">
+                        <i class="uil uil-setting"></i>
+                    </div>
+                    <div id="good-task" class="itemz">
+                        <i class="uil uil-clipboard-notes"></i>
+                        Task
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="Js/index.js"></script>
+    <script src="Js/notes.js"></script>
+    <script src="Js/task.js"></script>
+    <script src="Js/settings.js"></script>
 </body>
 
 </html>

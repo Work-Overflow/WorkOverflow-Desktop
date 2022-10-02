@@ -1,0 +1,143 @@
+/* Google Fonts Import Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&family=Titillium+Web:wght@200;300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f100;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #11101dad;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #11101ddf;
+  }
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+.body-section {
+    display: flex;
+    flex-direction: column;
+    background: #f1f3fa;
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.body-section .title-bar {
+    height: 10%;
+    display: flex;
+    align-items: center;
+    z-index: 9;
+    margin: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    /* background-color: #f1f3fa; */
+}
+
+.body-section .title-bar .bx-menu,
+.body-section .title-bar .text {
+    color: #11101d;
+    font-size: 35px;
+}
+
+.body-section .title-bar .bx-menu {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.body-section .title-bar .taskbar {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.body-section .title-bar .taskbar #good-greet {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.body-section .title-bar .taskbar #good-greet .itemz {
+    font-size: 20px;
+    color: rgb(0, 0, 57);
+    padding: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+    background: rgba(255, 255, 255, 0.084);
+    box-shadow: 0 8px 35px 0px rgb(0 0 0 / 37%);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all cubic-bezier(0.22, 0, 0.42, 0.98) 0.5s;
+}
+
+.body-section .title-bar .taskbar #good-greet .itemzz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgb(0, 0, 57);
+    padding: 5px;
+    padding-right: 13px;
+    padding-left: 13px;
+    background: rgba(255, 255, 255, 0.084);
+    box-shadow: 0 8px 35px 0px rgb(0 0 0 / 37%);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 60px;
+    cursor: pointer;
+    transition: all cubic-bezier(0.22, 0, 0.42, 0.98) 0.5s;
+}
+
+.body-section .title-bar .taskbar #good-greet .itemz:hover {
+    background-color: #11101d;
+    color: #f1f3fa;
+    transition: all cubic-bezier(0.22, 0, 0.42, 0.98) 0.5s;
+}
+
+.body-section .title-bar .taskbar #good-greet .itemzz:hover {
+    background-color: #11101d;
+    color: #f1f3fa;
+    transition: all cubic-bezier(0.22, 0, 0.42, 0.98) 0.5s;
+}
+
+/* .body-section .title-bar .taskbar #good-greet {
+    font-size: 0.8vw;
+    font-weight: 500;
+} */
+
+.body-section .main-content {
+    position: relative;
+    height: 100%;
+    z-index: 8;
+    background: rgba(255, 255, 255, 0.457);
+    overflow-wrap: break-word;
+
+}

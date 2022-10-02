@@ -1,0 +1,141 @@
+.settings-content{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    height: 80%;
+    transform: translate(-50%, 0);
+    top: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+}
+
+#setting-header{
+    padding-bottom: 10px;
+    padding-right: 50px;
+    padding-left: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#trademark{
+    font-size: 27px;
+    font-weight: 600;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+#trademark_desc{
+    font-size: 20px;
+    font-family: 'Klee One', cursive;
+}
+
+#close-settings-imp{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#setting-maal-masala{
+    height: 100%;
+    padding-top: 5px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#setting-maal-masala .settings-alive{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    /* border-bottom: 1px solid #ccc; */
+}
+
+#setting-maal-masala .settings-alive-header{
+    font-size: 18px;
+    font-weight: 500;
+}
+#setting-maal-masala .settings-alive-mode{
+    display: flex;
+    font-size: 25px;
+    margin-right: 10px;
+}
+#setting-maal-masala .settings-alive-mode .color{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 10px;
+    border: 2px solid #11101d;
+    cursor: pointer;
+}
+
+/* THEMES */
+#sun, #moon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    cursor: pointer;
+}
+#moon{
+    color: #ddd;
+    background-color: #11101d;
+}
+
+/* COLOR */
+#black{
+    background-color: #11101d;
+}
+#peach{
+    background-color: #EB1D36;
+}
+#yellow{
+    background-color: #FEDB39;
+}
+#blue{
+    background-color: #47B5FF;
+}
+
+/* CLEAR BUTTON */
+#clear-data-local-storage{
+    margin-top: 50px;
+    border: none;
+    opacity: 0.9;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 8px 18px;
+    border-radius: 5px;
+    letter-spacing: 0.4px;
+    pointer-events: none;
+    transition: transform 0.25s ease;
+    background: linear-gradient(135deg, #1a1927 0%, #11101d 100%);
+    cursor: pointer;
+}
+
+
+/* DEVELOPER SECTION */
+#dev{
+    position: absolute;
+    bottom: 10px;
+}
+#dev-about{
+    color: #11101d;
+    font-weight: 600;
+}
