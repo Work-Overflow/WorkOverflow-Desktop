@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <title>WorkOverflow</title>
+
+    <!-- FontAwesome - CSS -->
+    <link rel="stylesheet" href="Style/icon/all.css" />
+
+    <link rel="stylesheet" href="Style/title_bar_style.css" />
     <link rel="stylesheet" href="Style/style-two.css" />
     <link rel="stylesheet" href="Style/notes_style.css" />
     <link rel="stylesheet" href="Style/task_style.css" />
@@ -11,11 +16,38 @@
     <!-- Boxiocns CDN Link -->
     <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/x-icon" href="workoverflow.svg" />
+    <meta meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
 
 <body>
+    <div class="title-bar">
+        <!-- <div class="menu-button-container">
+            <button id="menu-button" class="menu-button" />
+        </div> -->
+        <div class="app-name-container">
+            <p id="font-title-bar">WorkOverflow ☭</p>
+            <!-- font-family: 'Titillium Web', sans-serif; -->
+        </div>
+        <div class="window-controls-container">
+            <button id="minimize-button" class="minimize-button window-button" /><svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512">
+                <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path d="M32 416c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H32z" />
+            </svg> </button>
+
+            <button id="min-max-button" class="min-max-button window-button" /> <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                    d="M.3 89.5C.1 91.6 0 93.8 0 96V224 416c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64V224 96c0-35.3-28.7-64-64-64H64c-2.2 0-4.4 .1-6.5 .3c-9.2 .9-17.8 3.8-25.5 8.2C21.8 46.5 13.4 55.1 7.7 65.5c-3.9 7.3-6.5 15.4-7.4 24zM48 224H464l0 192c0 8.8-7.2 16-16 16L64 432c-8.8 0-16-7.2-16-16l0-192z" />
+            </svg> </button>
+            <button id="close-button" class="close-button window-button" /> <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 320 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                    d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" />
+            </svg></button>
+        </div>
+    </div>
     <section class="body-section">
         <div class="main-content">
             <div class="task-content content">
@@ -69,9 +101,9 @@
             <div class="settings-content">
                 <i class="uil uil-times" id="close-settings-imp"></i>
                 <div id="setting-header">
-                    <p id="trademark">WorkOverflow 2.3</p>
+                    <p id="trademark">WorkOverflow ☭</p>
                     <p id="trademark_desc">
-                        A simple task/notes editor for productivity
+                        A simple task/notes creator for workers
                     </p>
                 </div>
                 <div id="setting-maal-masala">
@@ -97,8 +129,9 @@
                         <div class="settings-alive-mode" id="storage-capacity">0 KB</div>
                     </div>
                     <button id="clear-data-local-storage">Clear Data</button>
-                    <p style="text-align: center; padding-top: 10px;">Some settings may not work, <br>because the settings, are still under development</p>
-                    <p id="dev">Developed by <a id="dev-about" href="https://github.com/dwijottam-dutta">Dwijottam Dutta</a></p>
+                    <p style="text-align: center; padding-top: 10px;">Still under Development <br><b>WORKER'S OF THE WORLD, UNITE ☭</b></p>
+                    <p id="dev">Developed by <a id="dev-about">Dwijottam
+                            Dutta</a></p>
                 </div>
             </div>
         </div>

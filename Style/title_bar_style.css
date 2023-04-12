@@ -1,0 +1,100 @@
+.title-bar {
+    -webkit-app-region: drag;
+    margin: 0;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 25px;
+    z-index: 10;
+}
+
+/* .menu-button-container {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+} */
+
+#font-title-bar{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+}
+
+.app-name-container {
+    background-color: white;
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.window-controls-container {
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+}
+
+svg {
+    width: 10px;
+}
+
+.menu-button {
+    -webkit-app-region: no-drag;
+    background-color: green;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.menu-button:hover {
+    background-color: grey;
+}
+
+.minimize-button {
+    -webkit-app-region: no-drag;
+    background-color: transparent;
+    margin-left: 2px;
+    margin-right: 2px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+
+.minimize-button:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+.min-max-button {
+    -webkit-app-region: no-drag;
+    background-color: transparent;
+    margin-left: 2px;
+    margin-right: 2px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+
+.min-max-button:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+.close-button {
+    -webkit-app-region: no-drag;
+    background-color: transparent;
+    padding-top: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: none;
+}
+
+.close-button:hover {
+    background-color: rgb(255, 129, 129);
+}

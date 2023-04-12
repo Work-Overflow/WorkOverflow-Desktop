@@ -1,0 +1,38 @@
+{
+  "name": "workoverflow",
+  "productName": "WorkOverflow",
+  "version": "2.3.0",
+  "description": "A simple task & notes creator for productivity in life",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build-installer": "electron-builder"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^23.2.0",
+    "electron-builder": "^23.6.0"
+  },
+  "build": {
+    "appId": "WorkOverflow",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "./workoverflow.png",
+      "requestedExecutionLevel": "requireAdministrator"
+    },
+    "nsis": {
+      "installerIcon": "./workoverflow.png",
+      "uninstallerIcon": "./workoverflow.png",
+      "uninstallDisplayName": "WorkOverflow",
+      "license": "./LICENCE",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "dependencies": {
+    "electron-packager": "^17.1.1"
+  }
+}
