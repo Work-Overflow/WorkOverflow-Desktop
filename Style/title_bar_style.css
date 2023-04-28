@@ -1,3 +1,24 @@
+:root {
+
+    --background-1: tranparent;
+    --background-2: tranparent;
+    --background-3: tranparent;
+
+    --text-icons-1: tranparent;
+    --text-icons-2: tranparent;
+    --text-icons-ccc: tranparent;
+    --text-icons-special-case: tranparent;
+
+    --scroll-track: tranparent;
+    --scroll-thumb: tranparent;
+    
+
+    --window-button: transparent;
+}
+
+
+
+
 .title-bar {
     -webkit-app-region: drag;
     margin: 0;
@@ -6,6 +27,7 @@
     width: 100%;
     height: 25px;
     z-index: 10;
+    background-color: var(--background-1);
 }
 
 /* .menu-button-container {
@@ -15,21 +37,46 @@
     flex-grow: 1;
 } */
 
-#font-title-bar{
+#font-title-bar {
     font-family: 'Titillium Web', sans-serif;
     font-weight: 700;
+    color: var(--text-icons-1);
 }
 
 .app-name-container {
-    background-color: white;
     display: flex;
     padding-left: 10px;
     align-items: center;
     flex-grow: 1;
 }
 
+.title-menu{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.itemz {
+    font-size: 14px;
+    color: var(--text-icons-1);
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-left: 5px;
+    margin-right: 5px;
+    -webkit-app-region: no-drag;
+    background: rgba(255, 255, 255, 0.071);
+    /* border-radius: 5px; */
+    cursor: pointer;
+    transition: 0.01s ease-in-out all;
+    border-radius: 5px;
+}
+
+.itemz:hover{
+    border-bottom: 2px solid var(--text-icons-1);
+}
+
 .window-controls-container {
-    background-color: white;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -53,9 +100,27 @@ svg {
     background-color: grey;
 }
 
+.settings-button{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-app-region: no-drag;
+    background: linear-gradient(135deg, #1a1927 0%, #11101d 100%);
+    margin-left: 2px;
+    margin-right: 2px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    color: var(--text-icons-special-case);
+    cursor: pointer;
+    margin-right: 20px;
+}
+
 .minimize-button {
     -webkit-app-region: no-drag;
-    background-color: transparent;
+    background-color: var(--window-button);
     margin-left: 2px;
     margin-right: 2px;
     border-radius: 50%;
@@ -70,7 +135,7 @@ svg {
 
 .min-max-button {
     -webkit-app-region: no-drag;
-    background-color: transparent;
+    background-color: var(--window-button);
     margin-left: 2px;
     margin-right: 2px;
     border-radius: 50%;
@@ -85,7 +150,7 @@ svg {
 
 .close-button {
     -webkit-app-region: no-drag;
-    background-color: transparent;
+    background-color: var(--window-button);
     padding-top: 2px;
     margin-left: 2px;
     margin-right: 2px;

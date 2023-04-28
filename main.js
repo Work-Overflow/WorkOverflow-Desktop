@@ -13,12 +13,14 @@ const createWindow = () => {
     minHeight: 650,
     minWidth: 1100,
     title: 'WorkOverflow',
+    transparent: true,
     frame: false,
     icon:'./workoverflow.png',
     webPreferences: {
-      devTools: false,
+      devTools: true,
         nodeIntegration: true,
         contextIsolation: false,
+        enableremotemodule: true,
       preload: path.join(__dirname, 'preload.js')
     }
   })

@@ -13,10 +13,15 @@
     display: flex;
     flex-direction: column;
     padding: 40px 0 0px;
-    /* background: #fff; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    background: var(--background-1);
     border-radius: 7px;
-    /* box-shadow: 0 10px 30px rgb(0 0 0 / 10%); */
-    height: 100%;
+    box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+    height: 90%;
 }
 
 .task-input {
@@ -27,13 +32,12 @@
     position: relative;
 }
 
-.task-input #task_add_icon{
+.task-input #task_add_icon {
     font-size: 35px;
-    /* padding-left: 20px; */
     border: none;
     opacity: 0.6;
     outline: none;
-    color: #fff;
+    color: var(--text-icons-special-case);
     cursor: pointer;
     /* font-size: 13px; */
     padding: 10px;
@@ -41,9 +45,11 @@
     letter-spacing: 0.3px;
     pointer-events: none;
     transition: transform 0.25s ease;
-    background: linear-gradient(135deg, #1a1927 0%, #11101d 100%);
-    /* font-variant: diagonal-fractions; */
+    background: rgb(7, 7, 7);
+    font-variant: diagonal-fractions;
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin-left: 15px;
 }
 
@@ -69,20 +75,23 @@
     font-size: 18px;
     border-radius: 5px;
     padding: 0 20px 0 53px;
-    border: 1px solid #999;
+    border: 2px solid #000000;
+    background-color: var(--background-1);
+    color: var(--text-icons-1);
 }
 
 .task-input input:focus,
 .task-input input.active {
     padding-left: 52px;
-    border: 2px solid #11101de1;
+    border: 3px solid var(--background-3);
 }
 
 .task-input input::placeholder {
-    color: #bfbfbf;
+    color: var(--text-icons-ccc);
 }
 
-.controls, .task{
+.controls,
+.task {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -90,13 +99,13 @@
 
 .controls {
     padding: 18px 25px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--text-icons-ccc);
 }
 
 .filters span {
     margin: 0 8px;
     font-size: 17px;
-    color: #444444be;
+    color: var(--text-icons-2);
     cursor: pointer;
 }
 
@@ -106,15 +115,15 @@
 
 .filters span.active {
     transition: all ease-in-out 0.5s;
-    color: #0b0a13;
+    color: var(--text-icons-1);
     font-weight: 500;
 }
 
 .controls .clear-btn {
     border: none;
-    opacity: 0.6;
+    opacity: 0.4;
     outline: none;
-    color: #fff;
+    color: var(--text-icons-special-case);
     cursor: pointer;
     font-size: 13px;
     padding: 7px 13px;
@@ -122,7 +131,7 @@
     letter-spacing: 0.3px;
     pointer-events: none;
     transition: transform 0.25s ease;
-    background: linear-gradient(135deg, #1a1927 0%, #11101d 100%);
+    background: rgb(7, 7, 7);
 }
 
 .clear-btn.active {
@@ -137,9 +146,10 @@
 .task-box {
     margin-top: 20px;
     margin-right: 5px;
-    padding: 0 20px 20px 25px;
-    border-bottom: 1px solid rgb(204, 204, 204);
-    overflow-y: auto;
+    padding: 0px 15px 20px 20px;
+    overflow-y: scroll;
+    z-index: 0;
+    height: 100%;
 }
 
 .task-box::-webkit-scrollbar {
@@ -147,12 +157,12 @@
 }
 
 .task-box::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: var(--scroll-track);
     border-radius: 25px;
 }
 
 .task-box::-webkit-scrollbar-thumb {
-    background: #e6e6e6;
+    background: var(--scroll-thumb);
     border-radius: 25px;
 }
 
@@ -162,7 +172,7 @@
     margin-bottom: 18px;
     padding-bottom: 16px;
     align-items: flex-start;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--text-icons-ccc);
 }
 
 .task-box .task:last-child {
@@ -176,15 +186,20 @@
     align-items: flex-start;
 }
 
+.task-box span {
+    color: var(--text-icons-2);
+}
+
 .task label input {
     margin-top: 10px;
-    accent-color: #11101d;
+    accent-color: var(--text-icons-1);
 }
 
 .task label p {
     user-select: none;
     margin-left: 12px;
     word-wrap: break-word;
+    color: var(--text-icons-1);
 }
 
 .task label p.checked {
@@ -193,6 +208,7 @@
 
 .task-box .settings {
     position: relative;
+    color: var(--text-icons-2);
 }
 
 .settings :where(i, li) {
@@ -204,7 +220,7 @@
     right: -5px;
     bottom: -65px;
     padding: 5px 0;
-    background: #fff;
+    background: var(--background-1);
     position: absolute;
     border-radius: 4px;
     transform: scale(0);
@@ -235,6 +251,7 @@
     padding: 9px 15px;
     cursor: pointer;
     justify-content: flex-start;
+    color: var(--text-icons-1);
 }
 
 .task-menu li:last-child {
@@ -242,7 +259,7 @@
 }
 
 .settings li:hover {
-    background: #f5f5f5;
+    background: var(--background-2);
 }
 
 .settings li i {

@@ -34,10 +34,10 @@ function showNotes() {
                         <div class="bottom-content">
                             <span>${note.date}</span>
                             <div class="settings">
-                                <i onclick="showNOTESMenu(this)" class="uil uil-ellipsis-h"></i>
+                                <i onclick="showNOTESMenu(this)" class="ri-more-2-fill"></i>
                                 <ul class="menu">
-                                    <li onclick="updateNote(${id}, '${note.title}', '${filterDesc}')"><i class="uil uil-pen"></i>Edit</li>
-                                    <li onclick="deleteNote(${id})"><i class="uil uil-trash"></i>Delete</li>
+                                    <li onclick="updateNote(${id}, '${note.title}', '${filterDesc}')"><i class="ri-pen-nib-line"></i>Edit</li>
+                                    <li onclick="deleteNote(${id})"><i class="ri-delete-bin-6-line"></i>Delete</li>
                                 </ul>
                             </div>
                         </div>

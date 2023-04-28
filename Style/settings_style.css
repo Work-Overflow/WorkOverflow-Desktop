@@ -6,30 +6,31 @@
     left: 50%;
     height: 80%;
     transform: translate(-50%, 0);
-    top: 30px;
-    background: rgba(255, 255, 255, 0.2);
+    top: 80px;
+    background: rgb(255 255 255 / 66%);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(12px);
 }
 
 #setting-header{
     padding-bottom: 10px;
     padding-right: 50px;
     padding-left: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--text-icons-2);
 }
 
 #trademark{
-    font-size: 27px;
+    font-size: 28px;
     font-weight: 600;
     font-family: 'Titillium Web', sans-serif;
 }
 
 #trademark_desc{
-    font-size: 20px;
+    font-size: 17px;
     font-family: 'Klee One', cursive;
+    font-weight: 600;
+    margin-top: -7px;
 }
 
 #close-settings-imp{
@@ -54,14 +55,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 5px;
-    /* border-bottom: 1px solid #ccc; */
 }
 
 #setting-maal-masala .settings-alive-header{
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 800;
+    
+    font-family: 'Titillium Web', sans-serif;
 }
 #setting-maal-masala .settings-alive-mode{
     display: flex;
@@ -73,8 +75,19 @@
     height: 35px;
     border-radius: 50%;
     margin-left: 10px;
-    border: 2px solid #11101d;
+    border: 2px solid #0a0a10;
     cursor: pointer;
+}
+
+#setting-maal-masala .settings-alive-mode #tranparency-switch{
+    /* border: 2px solid #333; */
+    /* opacity: 0.5; */
+    outline: none;
+    color: #000;
+    cursor: pointer;
+    font-size: 35px;
+    padding: 3px 20px;
+    transition: transform 0.25s ease;
 }
 
 /* THEMES */
@@ -117,13 +130,12 @@
     border: none;
     opacity: 0.9;
     outline: none;
-    color: #fff;
+    color: var(--text-icons-special-case);
     cursor: pointer;
     font-size: 15px;
     padding: 8px 18px;
     border-radius: 5px;
     letter-spacing: 0.4px;
-    pointer-events: none;
     transition: transform 0.25s ease;
     background: linear-gradient(135deg, #1a1927 0%, #11101d 100%);
     cursor: pointer;
@@ -136,6 +148,6 @@
     bottom: 10px;
 }
 #dev-about{
-    color: #11101d;
+    color: var(--background-3);
     font-weight: 600;
 }

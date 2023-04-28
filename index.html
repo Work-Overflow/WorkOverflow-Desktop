@@ -6,16 +6,14 @@
     <title>WorkOverflow</title>
 
     <!-- FontAwesome - CSS -->
-    <link rel="stylesheet" href="Style/icon/all.css" />
+    <link rel="stylesheet" href="Style/remixicon.css" />
 
     <link rel="stylesheet" href="Style/title_bar_style.css" />
     <link rel="stylesheet" href="Style/style-two.css" />
     <link rel="stylesheet" href="Style/notes_style.css" />
     <link rel="stylesheet" href="Style/task_style.css" />
     <link rel="stylesheet" href="Style/settings_style.css" />
-    <!-- Boxiocns CDN Link -->
-    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
     <link rel="shortcut icon" type="image/x-icon" href="workoverflow.svg" />
     <meta meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 </head>
@@ -29,7 +27,22 @@
             <p id="font-title-bar">WorkOverflow ☭</p>
             <!-- font-family: 'Titillium Web', sans-serif; -->
         </div>
+
+        <div class="title-menu">
+            <div id="good-notes" class="itemz">
+                <i class="ri-sticky-note-line"></i>
+                Notes
+            </div>
+            <div id="good-task" class="itemz">
+                <i class="ri-keynote-line"></i>
+                Task
+            </div>
+        </div>
+
         <div class="window-controls-container">
+            <div id="workoverflow-icon" class="settings-button">
+                <i class="ri-settings-line"></i>
+            </div>
             <button id="minimize-button" class="minimize-button window-button" /><svg xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512">
                 <!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -54,7 +67,7 @@
                 <div class="task-wrapper">
                     <div class="task-input">
                         <input type="text" placeholder="Enter a new task" />
-                        <i class="uil uil-plus" id="task_add_icon"></i>
+                        <i class="ri-add-line" id="task_add_icon"></i>
                     </div>
                     <div class="controls">
                         <div class="filters">
@@ -74,7 +87,7 @@
                         <div class="content">
                             <header>
                                 <p></p>
-                                <i class="uil uil-times"></i>
+                                <i class="ri-close-fill"></i>
                             </header>
                             <form action="#">
                                 <div class="row title">
@@ -92,14 +105,14 @@
                 </div>
                 <div class="notes-wrapper">
                     <li class="add-box">
-                        <div class="icon"><i class="uil uil-plus"></i></div>
+                        <div class="icon"><i class="ri-add-line"></i></div>
                         <p>Add new note</p>
                     </li>
                 </div>
             </div>
 
             <div class="settings-content">
-                <i class="uil uil-times" id="close-settings-imp"></i>
+                <i class="ri-close-fill" id="close-settings-imp"></i>
                 <div id="setting-header">
                     <p id="trademark">WorkOverflow ☭</p>
                     <p id="trademark_desc">
@@ -110,17 +123,17 @@
                     <div class="settings-alive">
                         <p class="settings-alive-header">Theme</p>
                         <div class="settings-alive-mode">
-                            <i class="uil uil-sun" id="sun"></i>
-                            <i class="uil uil-moon" id="moon"></i>
+                            <i class="ri-sun-line" id="sun" onclick="$LIGHT_MODE()"></i>
+                            <i class="ri-moon-clear-line" id="moon" onclick="$DARK_MODE()"></i>
                         </div>
                     </div>
                     <div class="settings-alive">
                         <p class="settings-alive-header">Color</p>
                         <div class="settings-alive-mode">
-                            <div class="color" id="black"></div>
-                            <div class="color" id="peach"></div>
-                            <div class="color" id="yellow"></div>
-                            <div class="color" id="blue"></div>
+                            <div class="color" id="black" onclick="$GET_BLACK()"></div>
+                            <div class="color" id="peach" onclick="$GET_PEACH()"></div>
+                            <div class="color" id="yellow" onclick="$GET_YELLOW()"></div>
+                            <div class="color" id="blue" onclick="$GET_BLUE()"></div>
                         </div>
 
                     </div>
@@ -128,31 +141,18 @@
                         <p class="settings-alive-header">Storage</p>
                         <div class="settings-alive-mode" id="storage-capacity">0 KB</div>
                     </div>
-                    <button id="clear-data-local-storage">Clear Data</button>
-                    <p style="text-align: center; padding-top: 10px;">Still under Development <br><b>WORKER'S OF THE WORLD, UNITE ☭</b></p>
-                    <p id="dev">Developed by <a id="dev-about">Dwijottam
-                            Dutta</a></p>
+                    <div class="settings-alive">
+                        <p class="settings-alive-header">Transparency</p>
+                        <div class="settings-alive-mode" id="transparency-mount" onclick="TRANSPARENT()">
+                            <i class="ri-toggle-line" id="transparency-switch"></i>
+                        </div>
+                    </div>
+                    <button id="clear-data-local-storage" onclick="CLEAR_DATA()">Clear Data</button>
+                    <p id="dev">Developed by <a id="dev-about">DJ DWAZZ ☭</a></p>
                 </div>
             </div>
         </div>
 
-        <div class="title-bar">
-            <div class="taskbar">
-                <div id="good-greet">
-                    <div id="good-notes" class="itemz">
-                        <i class="uil uil-notes"></i>
-                        Notes
-                    </div>
-                    <div id="workoverflow-icon" class="itemzz">
-                        <i class="uil uil-setting"></i>
-                    </div>
-                    <div id="good-task" class="itemz">
-                        <i class="uil uil-clipboard-notes"></i>
-                        Task
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
 
     <script src="Js/index.js"></script>

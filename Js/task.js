@@ -28,10 +28,10 @@ function showTodo(filter) {
                                 <p class="${completed}">${todo.name}</p>
                             </label>
                             <div class="settings">
-                                <i onclick="showTASKMenu(this)" class="uil uil-ellipsis-h"></i>
+                                <i onclick="showTASKMenu(this)" class="ri-more-2-fill"></i>
                                 <ul class="task-menu">
-                                    <li onclick='editTask(${id}, "${todo.name}")'><i class="uil uil-pen"></i>Edit</li>
-                                    <li onclick='deleteTask(${id}, "${filter}")'><i class="uil uil-trash"></i>Delete</li>
+                                    <li onclick='editTask(${id}, "${todo.name}")'><i class="ri-pen-nib-line"></i>Edit</li>
+                                    <li onclick='deleteTask(${id}, "${filter}")'><i class="ri-delete-bin-6-line"></i>Delete</li>
                                 </ul>
                             </div>
                         </li>`;
